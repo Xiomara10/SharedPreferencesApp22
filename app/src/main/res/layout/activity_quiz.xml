@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    tools:context=".activities.QuizActivity">
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp">
+
+        <EditText
+            android:id="@+id/name_input"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="text"
+            android:hint="Nombre"/>
+
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp">
+
+        <EditText
+            android:id="@+id/carrera_input"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="text"
+            android:hint="Carrera"/>
+
+    </android.support.design.widget.TextInputLayout>
+
+    <RadioGroup
+        android:id="@+id/genero_radiogroup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="16dp">
+
+        <RadioButton
+            android:id="@+id/masculino_rbutton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Masculino"
+            android:layout_weight="1"/>
+
+        <RadioButton
+            android:id="@+id/femenino_rbutton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Femenino"
+            android:layout_weight="1"/>
+
+    </RadioGroup>
+
+    <CheckBox
+        android:id="@+id/terminos_checkbox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:text="Aceptar terminos y condiciones"/>
+
+    <Button
+        android:id="@+id/quiz_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:text="Enviar"/>
+
+</LinearLayout>
